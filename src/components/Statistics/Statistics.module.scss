@@ -1,0 +1,72 @@
+.statistics {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #869d96;
+  border-radius: 6px;
+  padding: 0px;
+  background-color: #cce7c9;
+  -webkit-box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+  -moz-box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+  box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+}
+
+.statList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 10px 0 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 1px solid #869d96;
+}
+
+.item {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ustawienie pozycji względnej dla pseudoelementów */
+}
+
+.item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #869d96;
+}
+.item:first-child {
+  border-bottom-left-radius: 6px;
+}
+.item:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+.title {
+  margin: auto;
+  font-size: 22px;
+}
+
+.label {
+  color: #525b76;
+  font-size: 13px;
+  line-height: 2;
+}
+.percentage {
+  font-weight: 700;
+}

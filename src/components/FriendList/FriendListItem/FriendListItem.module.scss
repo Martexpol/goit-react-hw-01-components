@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  justify-content: left;
+  background-color: #f9f9ed;
+  width: 260px;
+  height: 70px;
+  border-radius: 4px;
+  margin: 20px 20px 0;
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(144, 164, 141, 1);
+  -moz-box-shadow: 0px 0px 23px 0px rgba(144, 164, 141, 1);
+  box-shadow: 0px 0px 23px 0px rgba(144, 164, 141, 1);
+  position: relative; /* Ustawienie pozycji względnej dla pseudoelementów */
+}
+
+.item:last-child {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 48px;
+  margin: 10px;
+}
+
+.name {
+  margin: auto 20px;
+  font-weight: 600;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto 20px;
+}
+
+.online {
+  background-color: #5b8e53;
+}
+
+.offline {
+  background-color: #c21e1e;
+}

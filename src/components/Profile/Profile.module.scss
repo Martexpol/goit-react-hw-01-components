@@ -1,0 +1,91 @@
+.profile {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #869d96;
+  border-radius: 6px;
+  padding: 0px;
+  background-color: #cce7c9;
+  -webkit-box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+  -moz-box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+  box-shadow: -1px 8px 24px 0px rgba(134, 157, 150, 1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 10px 0 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 1px solid #869d96;
+  background-color: #afcfaa;
+}
+
+.statsBox {
+  width: calc((100% + 2px) / 3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ustawienie pozycji względnej dla pseudoelementów */
+}
+
+.statsBox:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #869d96;
+}
+
+.avatar {
+  width: 130px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: azure;
+  border-radius: 50%;
+  border: 1px solid #869d96;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 4px;
+}
+.tag,
+.location {
+  font-size: 14px;
+  margin: 4px;
+  color: #525b76;
+  font-weight: 600;
+}
+
+.label {
+  color: #525b76;
+  font-size: 13px;
+  line-height: 2;
+}
+.quantity {
+  font-weight: 700;
+}
